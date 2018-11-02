@@ -8,7 +8,7 @@ namespace RolebaseAuthorization.Controllers
         public IActionResult OnlyAdminAccess()
         {
             ViewData["role"] = "Admin";
-            return View("MyPage");
+            return RedirectToAction("Index", "Admin");
         }
 
         [Authorize(Roles = "User,Admin,User")]

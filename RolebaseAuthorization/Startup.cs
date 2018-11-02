@@ -68,7 +68,7 @@ namespace RolebaseAuthorization
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Account}/{action=Login}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
 
             CreateRoles(serviceProvider).Wait();
@@ -94,14 +94,14 @@ namespace RolebaseAuthorization
 
 
 
-            IdentityUser user = await UserManager.FindByEmailAsync("hanbing@ualberta.ca");
+            IdentityUser user = await UserManager.FindByEmailAsync("admin@gmail.com");
 
             if (user == null)
             {
                 user = new IdentityUser()
                 {
-                    UserName = "hanbing@ualberta.ca",
-                    Email = "hanbing@ualberta.ca",
+                    UserName = "admin",
+                    Email = "admin@gmail.com",
                 };
                 await UserManager.CreateAsync(user, "Test@123");
             }
@@ -114,7 +114,7 @@ namespace RolebaseAuthorization
             {
                 user1 = new IdentityUser()
                 {
-                    UserName = "user@gmail.com",
+                    UserName = "user",
                     Email = "user@gmail.com",
                 };
                 await UserManager.CreateAsync(user1, "Test@123");
@@ -127,7 +127,7 @@ namespace RolebaseAuthorization
             {
                 user2 = new IdentityUser()
                 {
-                    UserName = "staff@gmail.com",
+                    UserName = "staff",
                     Email = "staff@gmail.com",
                 };
                 await UserManager.CreateAsync(user2, "Test@123");
@@ -135,5 +135,8 @@ namespace RolebaseAuthorization
             await UserManager.AddToRoleAsync(user2, "Staff");
 
         }
+
+
+
     }
 }
