@@ -1,6 +1,6 @@
 # ASP.NET CORE 2.1 ROLE MANAGEMENT
 The ASP.NET Core 2.1 Identity is a membership system, which allows us to add authentication and authorization functionality. 
-A user can create his/her own account with it and access the system, which is based on his/her roles. User data can be stored in SQL Server database. User with role "administrator" can change roles for other users. eg: change a "Unverified User"
+A user can create his/her own account with it and access the system, which is based on his/her roles. User data can be stored in SQL Server database. User with role "administrator" can change roles for other users. Eg: change a "Unverified User"
  to a "Verified User".
  
  ## Add Roles In the System
