@@ -15,11 +15,11 @@ A user can create his/her own account with it and access the system, which is ba
 
 ![editrole](https://user-images.githubusercontent.com/42009303/49815655-e14dd780-fd31-11e8-9d3a-2153c9d21d59.PNG)
 
-## user login page
+## User login page
 
 ![login](https://user-images.githubusercontent.com/42009303/49815656-e14dd780-fd31-11e8-8b0f-8fecbfc61626.PNG)
 
-## registration page for new user 
+## Registration page for new user 
 
 ![registration](https://user-images.githubusercontent.com/42009303/49815657-e1e66e00-fd31-11e8-9788-dae827d93342.PNG)
 
